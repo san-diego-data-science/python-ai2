@@ -92,6 +92,12 @@ Enrollment is confirmed upon payment of the invoice. The cost of the program is 
   For the best learning atmosphere, we don’t allow drop-in visits. However, the students will have access to all of the teaching material after the camp.
 - **Do you offer financial aid or scholarships?**  
   We are seeking sponsors to offer scholarships. Please contact us if you are interested in financial aid.
+- **Is parking available at the venue?**  
+  Yes, there is a large parking lot around the Italian school building at 4550 Kearny Villa Rd Suite 202.
+- **What is the class size?**  
+  We will target between 8 and 12 students.
+- **Is lunch or a snack provided?**  
+  No, lunch or snack is not provided. Please ensure your student brings a snack for the break.
 
 For any other questions, please contact us at:
 
