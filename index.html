@@ -10,8 +10,18 @@
     body { font-family: 'Raleway', sans-serif; }
   </style>
 </head>
+<!-- Sticky jump-to-section menu with extra top margin for main content -->
+<nav class="fixed top-0 left-1/2 -translate-x-1/2 z-50 bg-white/90 backdrop-blur shadow-lg rounded-lg px-2 py-2 flex flex-wrap justify-center gap-2 sm:gap-4 text-base font-semibold text-blue-900 border border-blue-200 w-[95vw] max-w-xl mx-auto"
+  style="max-width:95vw;">
+  <a href="#overview" class="hover:text-pink-600 transition-colors px-2 py-1">Overview</a>
+  <a href="#requirements" class="hover:text-pink-600 transition-colors px-2 py-1">Requirements</a>
+  <a href="#schedule" class="hover:text-pink-600 transition-colors px-2 py-1">Schedule</a>
+  <a href="#enroll" class="hover:text-pink-600 transition-colors px-2 py-1">Enroll</a>
+  <a href="#contact" class="hover:text-pink-600 transition-colors px-2 py-1">Contact</a>
+</nav>
+<!-- End sticky menu -->
 <body class="bg-white text-black min-h-screen flex flex-col items-center justify-center">
-  <main class="w-full max-w-2xl p-8">
+  <main class="w-full max-w-2xl p-8 mt-14">
     <div class="flex justify-center">
       <h1 class="text-4xl font-bold mb-4 bg-blue-100 text-blue-900 rounded-lg px-4 py-2 inline-block">Python + AI<sup>2</sup></h1>
     </div>
@@ -21,7 +31,7 @@
       <img src="pythonai2.png" alt="Python AI2 Camp Logo" class="w-full max-w-full h-auto rounded-lg shadow-md">
     </div>
     <!-- Overview section -->
-    <section class="bg-gray-50 rounded-lg shadow p-6 mb-8">
+    <section id="overview" class="bg-gray-50 rounded-lg shadow p-6 mb-8">
       <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
         <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Overview</span>
       </h4>
@@ -58,7 +68,7 @@
     <!-- End Summary section -->
 
     <!-- Requirements section -->
-    <section class="bg-gray-50 rounded-lg shadow p-6 mb-8">
+    <section id="requirements" class="bg-gray-50 rounded-lg shadow p-6 mb-8">
       <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
         <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Requirements</span>
       </h4>
@@ -71,7 +81,7 @@
     <!-- End Requirements section -->
 
     <!-- Schedule section -->
-    <section class="bg-gray-50 rounded-lg shadow p-6 mb-8">
+    <section id="schedule" class="bg-gray-50 rounded-lg shadow p-6 mb-8">
       <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
         <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Schedule</span>
       </h4>
@@ -94,7 +104,7 @@
     <!-- End Location section -->
 
     <!-- How to Enroll section -->
-    <section class="bg-gray-50 rounded-lg shadow p-6 mb-8">
+    <section id="enroll" class="bg-gray-50 rounded-lg shadow p-6 mb-8">
       <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
         <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">How to Enroll</span>
       </h4>
@@ -112,7 +122,7 @@
     <!-- End How to Enroll section -->
 
     <!-- Contact section -->
-    <section class="bg-gray-50 rounded-lg shadow p-6 mb-8">
+    <section id="contact" class="bg-gray-50 rounded-lg shadow p-6 mb-8">
       <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
         <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Contact</span>
       </h4>
