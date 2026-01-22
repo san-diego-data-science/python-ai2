@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python + AI² Flyer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        @page {
+            margin: 0;
+            size: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900 w-[210mm] h-[297mm] mx-auto overflow-hidden relative">
+
+    <!-- Content Container -->
+    <div class="h-full flex flex-col p-8">
+
+        <!-- Header -->
+        <header class="text-center mb-6">
+            <h1 class="text-5xl font-extrabold text-blue-900 mb-2">Python + AI<sup>2</sup></h1>
+            <h2 class="text-2xl font-bold text-pink-600">Spring Break Coding Camp</h2>
+            <p class="text-xl font-semibold mt-2 text-gray-700">March 30 - April 3, 2026</p>
+        </header>
+
+        <!-- Hero Image & Key Value Prop -->
+        <div class="flex flex-row gap-6 mb-6 items-center">
+            <div class="w-1/2">
+                <img src="pythonai2.png" alt="Python + AI Squared Camp" class="w-full rounded-xl shadow-lg">
+            </div>
+            <div class="w-1/2 space-y-4">
+                <p class="text-xl leading-relaxed font-medium text-gray-800">
+                    A hands-on camp for <span class="text-blue-700 font-bold">middle and high school students</span> to
+                    learn Python and build an <span class="text-pink-600 font-bold">AI-powered game</span>.
+                </p>
+                <ul class="space-y-2 text-lg">
+                    <li class="flex items-center gap-2">
+                        <span class="text-green-500 text-xl">✓</span> No experience required
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-green-500 text-xl">✓</span> Build a text-based game
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-green-500 text-xl">✓</span> Learn with an AI coding assistant
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-green-500 text-xl">✓</span> Morning only: 9am - 12pm
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Instructor Section -->
+        <div class="bg-blue-50 p-6 rounded-xl shadow-sm mb-6 flex items-center gap-6 border border-blue-100">
+            <img src="andrea_zonca.jpg" alt="Andrea Zonca"
+                class="w-24 h-24 rounded-full border-4 border-white shadow-md object-cover">
+            <div>
+                <h3 class="text-xl font-bold text-blue-900">Dr. Andrea Zonca</h3>
+                <p class="text-blue-700 font-medium text-sm mb-1">Lead of Scientific Computing Applications, SDSC @ UCSD
+                </p>
+                <p class="text-gray-700 text-sm italic">
+                    "Teaching Python since 2014. I believe in learning by doing—building real projects from day one."
+                </p>
+            </div>
+        </div>
+
+        <!-- Location & Cost -->
+        <div class="flex justify-between items-start mb-8 px-2">
+            <div class="w-1/2">
+                <h4 class="font-bold text-lg text-blue-900 mb-1">Location</h4>
+                <p class="text-gray-800">Italian School of San Diego<br>4550 Kearny Villa Rd Suite 202<br>Kearny Mesa,
+                    San Diego</p>
+            </div>
+            <div class="w-1/2 text-right">
+                <h4 class="font-bold text-lg text-blue-900 mb-1">Cost</h4>
+                <p class="text-2xl font-bold text-pink-600">$360</p>
+                <p class="text-sm text-gray-500">10% discount for siblings</p>
+            </div>
+        </div>
+
+        <!-- Footer / CTA -->
+        <div class="mt-auto bg-gray-900 text-white p-6 rounded-xl flex items-center justify-between shadow-2xl">
+            <div class="flex flex-col">
+                <p class="text-2xl font-bold mb-1 text-pink-400">Scan to Enroll or Learn More!</p>
+                <p class="text-lg text-gray-300">pythonai2.sandiegodata.science</p>
+                <div class="flex items-center gap-3 mt-4">
+                    <img src="San Diego Data Science Logo 200x200.png" alt="SD Data Science"
+                        class="w-12 h-12 bg-white rounded-full p-1">
+                    <span class="text-sm font-semibold text-gray-300">San Diego Data Science LLC</span>
+                </div>
+            </div>
+            <div class="bg-white p-2 rounded-lg">
+                <img src="qrcode.png" alt="QR Code" class="w-32 h-32">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
