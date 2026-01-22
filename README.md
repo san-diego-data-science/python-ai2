@@ -1,6 +1,6 @@
 # Python + AI² Coding Camp
 
-## Join us in Kearny Mesa, San Diego for an in-person summer coding camp — July 28 to August 1, 2025!
+## Join us in Kearny Mesa, San Diego for an in-person spring break coding camp — March 30 to April 3, 2026!
 
 Empowering Middle and High School students to explore Python and AI through hands-on, creative learning.
 
@@ -10,10 +10,10 @@ Empowering Middle and High School students to explore Python and AI through hand
 
 ## Overview
 
-- **Summer coding camp** for Middle and High School students, focused on Python and Artificial Intelligence.
-- **Dates:** Monday, July 28 to Friday, August 1, 2025.
-- **Enroll preferably by July 1st** for primary consideration.
-- **Time:** Morning option: 9am – 12pm (Mon, Wed, Thu, Fri); Afternoon option: 3pm – 6pm (Mon, Tue, Wed, Thu).
+- **Spring break coding camp** for Middle and High School students, focused on Python and Artificial Intelligence.
+- **Dates:** Monday, March 30 to Friday, April 3, 2026.
+- **Enroll preferably by March 1st, 2026** for primary consideration.
+- **Time:** Morning only: 9am – 12pm (Mon–Fri).
 - No prior programming experience required; all levels welcome.
 - Hands-on learning: students build a text-based game, first in Python, then enhanced with AI-powered features. Emphasis on practical, curiosity-driven, and AI-enhanced learning.
 - Direct interaction with bleeding-edge Large Language Models (LLMs) integrated into the curriculum.
@@ -29,7 +29,7 @@ Empowering Middle and High School students to explore Python and AI through hand
 
 ## Summary
 
-**Python + AI²** (pronounced "Python plus AI squared") is a summer coding camp designed to introduce students to the fundamentals of programming using Python. Python is widely recognized as the best starting language for learning programming due to its readability, simplicity, and versatility in both education and industry. It is also the primary language of the AI community, making it the ideal foundation for exploring artificial intelligence concepts.
+**Python + AI²** (pronounced "Python plus AI squared") is a spring break coding camp designed to introduce students to the fundamentals of programming using Python. Python is widely recognized as the best starting language for learning programming due to its readability, simplicity, and versatility in both education and industry. It is also the primary language of the AI community, making it the ideal foundation for exploring artificial intelligence concepts.
 
 The camp explores AI in two ways: first, by leveraging an AI coding assistant to help students understand, write, and document their Python code; and second, by integrating an external AI service to create an AI-powered opponent for a game project.
 
@@ -49,12 +49,9 @@ The main application will be a popular text-based game. Students will first impl
 
 ## Schedule
 
-**Dates:** Monday, July 28 to Friday, August 1, 2025
+**Dates:** Monday, March 30 to Friday, April 3, 2026
 
-- **Morning option:** 9am – 12pm (Mon, Wed, Thu, Fri)
-- **Afternoon option:** 3pm – 6pm (Mon, Tue, Wed, Thu)
-
-We will ask for your preference during pre-enrollment and select one of the two options based on the students' preferences.
+- **Morning only:** 9am – 12pm (Mon–Fri)
 
 ---
 
@@ -68,13 +65,13 @@ Kearny Mesa, San Diego
 
 ## How to Enroll
 
-Ready to join? Submit your pre-enrollment to reserve a spot for your student. We will review all applications and send an invitation to enroll as soon as possible, at the latest on **July 1st**.
+Ready to join? Submit your pre-enrollment to reserve a spot for your student. We will review all applications and send an invitation to enroll as soon as possible, at the latest on **March 1st, 2026**.
 
 Enrollment is confirmed upon payment of the invoice. The cost of the program is **$360** for the first student in a family; each additional sibling receives a 10% discount.
 
 [Submit Pre-Enrollment](https://docs.google.com/forms/d/e/1FAIpQLScesJCTZiWnxdkSpglX_CPumRuH4R7i8BWCu3Trllo5tSuhOw/viewform?usp=dialog)
 
-> **Note:** Primary consideration will be given to applications received before **July 1st**.
+> **Note:** Primary consideration will be given to applications received before **March 1st, 2026**.
 
 ---
 
