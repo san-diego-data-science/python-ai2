@@ -3,213 +3,298 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Python + AI^2</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <title>Python & AI Coding Camp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: 'Raleway', sans-serif; }
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .gradient-text { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; padding-bottom: 0.1em; line-height: 1.2; }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    .glow { box-shadow: 0 0 40px rgba(99, 102, 241, 0.15); }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+    .float-animation { animation: float 6s ease-in-out infinite; }
   </style>
 </head>
-<!-- Sticky jump-to-section menu with extra top margin for main content -->
-<nav class="fixed top-0 left-1/2 -translate-x-1/2 z-50 bg-white/90 backdrop-blur shadow-lg rounded-lg px-2 py-2 flex flex-wrap justify-center gap-2 sm:gap-4 text-base font-semibold text-blue-900 border border-blue-200 w-[95vw] max-w-xl mx-auto"
-  style="max-width:95vw;">
-  <a href="#overview" class="hover:text-pink-600 transition-colors px-2 py-1">Overview</a>
-  <a href="#schedule" class="hover:text-pink-600 transition-colors px-2 py-1">Schedule</a>
-  <a href="#enroll" class="hover:text-pink-600 transition-colors px-2 py-1">Enroll</a>
-  <a href="#contact" class="hover:text-pink-600 transition-colors px-2 py-1">Contact</a>
+<!-- Sticky jump-to-section menu -->
+<nav class="fixed top-3 left-1/2 -translate-x-1/2 z-50 bg-white/95 backdrop-blur-md shadow-xl rounded-full px-6 py-3 flex flex-wrap justify-center gap-1 sm:gap-2 text-sm font-semibold text-slate-700 border border-slate-200/50 max-w-fit">
+  <a href="#overview" class="hover:text-indigo-600 hover:bg-indigo-50 transition-all px-3 py-1.5 rounded-full">Overview</a>
+  <a href="#schedule" class="hover:text-indigo-600 hover:bg-indigo-50 transition-all px-3 py-1.5 rounded-full">Schedule</a>
+  <a href="#enroll" class="hover:text-indigo-600 hover:bg-indigo-50 transition-all px-3 py-1.5 rounded-full">Enroll</a>
+  <a href="#contact" class="hover:text-indigo-600 hover:bg-indigo-50 transition-all px-3 py-1.5 rounded-full">Contact</a>
 </nav>
 <!-- End sticky menu -->
-<body class="bg-white text-black min-h-screen flex flex-col items-center justify-center">
-  <main class="w-full max-w-2xl p-8 mt-16 sm:mt-14">
-    <div class="flex justify-center">
-      <h1 class="text-4xl font-bold mb-4 bg-blue-100 text-blue-900 rounded-lg px-4 py-2 inline-block">Python + AI<sup>2</sup> Coding Camp</h1>
+<body class="bg-gradient-to-br from-slate-50 via-white to-indigo-50/30 text-slate-800 min-h-screen">
+  <main class="w-full max-w-3xl mx-auto px-6 sm:px-8 pt-24 pb-12">
+    <!-- Hero Section -->
+    <div class="text-center mb-12">
+      <!-- Modern Hero Graphic -->
+      <div class="relative mb-8">
+        <div class="flex items-center justify-center gap-6 sm:gap-10 py-8">
+          <!-- Python Icon -->
+          <div class="relative">
+            <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-3xl bg-gradient-to-br from-yellow-400 via-yellow-500 to-blue-600 shadow-2xl flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
+              <svg class="w-14 h-14 sm:w-20 sm:h-20" viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                <defs>
+                  <linearGradient id="pyBlue" x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%">
+                    <stop stop-color="#387EB8" offset="0%"/>
+                    <stop stop-color="#366994" offset="100%"/>
+                  </linearGradient>
+                  <linearGradient id="pyYellow" x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%">
+                    <stop stop-color="#FFC836" offset="0%"/>
+                    <stop stop-color="#FFD43B" offset="100%"/>
+                  </linearGradient>
+                </defs>
+                <path d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z" fill="url(#pyBlue)"/>
+                <path d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z" fill="url(#pyYellow)"/>
+              </svg>
+            </div>
+            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center">
+              <span class="text-xs font-bold text-slate-600">🐍</span>
+            </div>
+          </div>
+          
+          <!-- Plus/Ampersand -->
+          <div class="text-5xl sm:text-7xl font-bold text-slate-300">&</div>
+          
+          <!-- AI Icon -->
+          <div class="relative">
+            <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-3xl bg-gradient-to-br from-violet-500 via-purple-600 to-fuchsia-600 shadow-2xl flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
+              <svg class="w-14 h-14 sm:w-20 sm:h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                <circle cx="12" cy="9" r="2" fill="currentColor" stroke="none"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 9h.01M16 9h.01"/>
+              </svg>
+            </div>
+            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center">
+              <span class="text-xs font-bold text-slate-600">🤖</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 gradient-text">Python & AI Coding Camp</h1>
+      <p class="text-xl sm:text-2xl font-semibold text-slate-700 mb-3">Spring Break 2026 · San Diego</p>
+      <p class="text-lg text-slate-600 mb-6 max-w-xl mx-auto">A hands-on camp for middle and high school students to learn Python and build an AI-powered game.</p>
+      
+      <!-- Key info badges -->
+      <div class="flex flex-wrap justify-center gap-3 mb-8">
+        <span class="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          March 30 - April 3
+        </span>
+        <span class="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          9am - 12pm
+        </span>
+        <span class="inline-flex items-center gap-2 bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Kearny Mesa
+        </span>
+      </div>
     </div>
-    <h2 class="text-xl font-semibold mb-2 text-center">Join us in Kearny Mesa, San Diego for an in-person spring break coding camp - March 30 to April 3, 2026!</h2>
-    <p class="mb-8 text-lg text-center">A hands-on camp for middle and high school students to learn Python and build an AI-powered game.</p>
-    <div class="flex justify-center mb-6">
-      <img src="pythonai2.png" alt="Python + AI Squared Camp Logo: stylized Python and AI graphics" class="w-full max-w-full h-auto rounded-lg shadow-md">
-    </div>
-    <!-- Overview section -->
-    <section id="overview" class="scroll-mt-16 bg-gray-50 rounded-lg shadow p-6 mb-8">
-      <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
-        <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Overview</span>
-      </h4>
-      <ul class="list-disc pl-6 space-y-2 text-base text-blue-900">
-        <li><span class="font-semibold">Spring break coding camp</span> for middle and high school students, focused on Python and artificial intelligence.</li>
-        <li><span class="font-semibold">Dates:</span> Monday, March 30 to Friday, April 3, 2026.</li>
-        <li><span class="font-semibold">Apply by March 1, 2026</span> for priority consideration.</li>
-        <li><span class="font-semibold">Time:</span> Morning only: 9am - 12pm (Mon-Fri).</li>
-        <li>No prior programming experience required; all levels welcome.</li>
-        <li>Hands-on learning: students build a text-based game in Python, then add an AI-powered opponent.</li>
-        <li>Students use an AI coding assistant to understand and improve their code.</li>
-        <li>All activities are browser-based; students only need to bring a laptop (no installation required).</li>
-        <li>Hosted at the Italian School of San Diego, Kearny Mesa.</li>
-        <li>Pre-enrollment required; spots are confirmed upon payment.</li>
-        <li><span class="font-semibold">Cost:</span> $360.</li>
-        <li>Led and taught personally by Dr. Andrea Zonca, Lead of Scientific Computing Applications at the San Diego Supercomputer Center at UCSD.</li>
-
-      </ul>
-      <p class="mt-6 bg-pink-100 text-pink-900 rounded-lg px-4 py-3 shadow font-medium">
-        We welcome and actively encourage students from underrepresented genders and communities in tech to join us. Our camp is designed to create a supportive, inclusive space where every student can discover the power of coding and AI.
-      </p>
+    <!-- What You'll Learn - Compact highlight cards -->
+    <section id="overview" class="scroll-mt-20 mb-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white rounded-2xl shadow-lg p-6 border border-slate-100 card-hover">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">🐍</span>
+            <h4 class="font-bold text-slate-800">Learn Python</h4>
+          </div>
+          <p class="text-slate-600 text-sm">Build a text-based game from scratch. No experience needed.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 border border-slate-100 card-hover">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">🤖</span>
+            <h4 class="font-bold text-slate-800">Add AI Power</h4>
+          </div>
+          <p class="text-slate-600 text-sm">Create a smart AI opponent and use AI coding assistants.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 border border-slate-100 card-hover">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">💻</span>
+            <h4 class="font-bold text-slate-800">Just Bring a Laptop</h4>
+          </div>
+          <p class="text-slate-600 text-sm">Everything runs in the browser. No installation required.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 border border-slate-100 card-hover">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">🎓</span>
+            <h4 class="font-bold text-slate-800">Expert Instruction</h4>
+          </div>
+          <p class="text-slate-600 text-sm">Taught by Dr. Andrea Zonca from UCSD's Supercomputer Center.</p>
+        </div>
+      </div>
     </section>
-    <!-- End Overview section -->
 
-    <!-- Summary section -->
-    <section class="bg-gray-50 rounded-lg shadow p-6 mb-8">
-      <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
-        <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Summary</span>
-      </h4>
-      <p class="text-base text-gray-800"><span class="font-semibold">Python + AI<sup>2</sup></span> (pronounced "Python plus AI squared") is a spring break coding camp that introduces students to core programming concepts using Python.</p>
-      <p class="text-base text-gray-800 mt-2">Students explore AI in two ways: by using an AI coding assistant to better understand and improve their Python, and by integrating an AI service to create a smart opponent for their game.</p>
-      <p class="text-base text-gray-800 mt-2">The project is a classic text-based game. Students build a player-vs-player version first, then upgrade it with AI.</p>
-      <p class="text-base text-blue-900 mt-6 bg-blue-50 rounded-lg px-4 py-3 shadow font-medium">
-        <span class="text-blue-700">This program was conceived and developed by <span class="font-bold">Andrea Zonca</span> in 2025. The curriculum includes direct interaction with modern Large Language Models (such as ChatGPT). Instruction will be provided personally by Dr. Zonca.</span>
-      </p>
+    <!-- Quick Details -->
+    <section id="schedule" class="scroll-mt-20 bg-white rounded-2xl shadow-lg p-6 mb-8 border border-slate-100">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">When</p>
+          <p class="font-bold text-slate-800">March 30 – April 3</p>
+          <p class="text-sm text-slate-600">9am – 12pm daily</p>
+        </div>
+        <div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">Where</p>
+          <p class="font-bold text-slate-800">Kearny Mesa</p>
+          <p class="text-sm text-slate-600">Italian School of San Diego</p>
+        </div>
+        <div>
+          <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">Cost</p>
+          <p class="font-bold text-slate-800">$360</p>
+          <p class="text-sm text-slate-600">Sibling discount: 10%</p>
+        </div>
+      </div>
     </section>
-    <!-- End Summary section -->
-
-    <!-- Requirements section -->
-    <section id="requirements" class="scroll-mt-16 bg-gray-50 rounded-lg shadow p-6 mb-8">
-      <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
-        <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Requirements</span>
-      </h4>
-      <ul class="list-disc pl-6 space-y-2 text-base text-blue-900">
-        <li><span class="font-semibold">No previous programming experience is required.</span> Kids with prior Python experience are also welcome—there is still plenty to learn!</li>
-        <li>Each student must bring their own laptop. No installation is needed; all resources will be accessed via a web browser and the school's Wi-Fi.</li>
-        <li>No tablets or phones. Any Windows laptop, MacBook, or Chromebook is acceptable, as long as it has a functioning browser.</li>
-      </ul>
-    </section>
-    <!-- End Requirements section -->
-
-    <!-- Schedule section -->
-    <section id="schedule" class="scroll-mt-16 bg-gray-50 rounded-lg shadow p-6 mb-8">
-      <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
-        <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Schedule</span>
-      </h4>
-      <p class="text-base text-gray-800 mb-2"><span class="font-semibold">Dates:</span> Monday, March 30 to Friday, April 3, 2026</p>
-      <ul class="list-disc pl-6 space-y-1 text-base text-gray-800">
-        <li><span class="font-semibold">Morning only:</span> 9am - 12pm (Mon-Fri)</li>
-      </ul>
-    </section>
-    <!-- End Schedule section -->
-
-    <!-- Location section -->
-    <section class="bg-gray-50 rounded-lg shadow p-6 mb-8">
-      <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
-        <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Location</span>
-      </h4>
-      <p class="text-base text-gray-800">The camp is hosted at <span class="font-semibold">Italian School of San Diego</span><br><code>4550 Kearny Villa Rd Suite 202</code><br>Kearny Mesa, San Diego</p>
-    </section>
-    <!-- End Location section -->
 
     <!-- How to Enroll section -->
-    <section id="enroll" class="scroll-mt-16 bg-gray-50 rounded-lg shadow p-6 mb-8">
-      <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
-        <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">How to Enroll</span>
+    <section id="enroll" class="scroll-mt-20 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 rounded-2xl shadow-xl p-8 mb-8 text-white">
+      <h4 class="text-2xl font-bold mb-4 flex items-center gap-3">
+        <span class="inline-flex items-center justify-center w-10 h-10 bg-white/20 backdrop-blur rounded-xl">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+        </span>
+        How to Enroll
       </h4>
-      <p class="text-base text-gray-800 mb-2">Ready to join? Submit your pre-enrollment to reserve a spot for your student. We review applications on a rolling basis and will send enrollment invitations as soon as possible, no later than <span class='font-semibold'>March 1, 2026</span>.</p>
-      <p class="text-base text-gray-800 mb-4">
-        Enrollment is confirmed upon payment of the invoice. The cost of the program is <span class="font-bold">$360</span> for the first student in a family; each additional sibling receives a 10% discount.
+      <p class="text-base text-white/90 mb-3">Ready to join? Submit your pre-enrollment to reserve a spot for your student. We review applications on a rolling basis and will send enrollment invitations as soon as possible, no later than <span class='font-semibold text-white'>March 1, 2026</span>.</p>
+      <p class="text-base text-white/90 mb-6">
+        Enrollment is confirmed upon payment of the invoice. The cost of the program is <span class="font-bold text-white">$360</span> for the first student in a family; each additional sibling receives a 10% discount.
       </p>
-      <div class="flex justify-center mb-4">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScesJCTZiWnxdkSpglX_CPumRuH4R7i8BWCu3Trllo5tSuhOw/viewform?usp=dialog" target="_blank" rel="noopener" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-lg text-xl shadow-lg transition-colors duration-200" aria-label="Submit pre-enrollment form for Python + AI Squared camp">Submit Pre-Enrollment</a>
+      <div class="flex justify-center mb-5">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScesJCTZiWnxdkSpglX_CPumRuH4R7i8BWCu3Trllo5tSuhOw/viewform?usp=dialog" target="_blank" rel="noopener" class="bg-white hover:bg-slate-100 text-indigo-700 font-bold py-4 px-10 rounded-full text-lg shadow-lg transition-all duration-200 hover:scale-105" aria-label="Submit pre-enrollment form for Python & AI Coding Camp">Submit Pre-Enrollment →</a>
       </div>
-      <div class="bg-blue-100 text-blue-900 rounded-lg px-4 py-3 shadow text-center text-base font-medium max-w-xl mx-auto">
+      <div class="bg-white/15 backdrop-blur rounded-xl px-5 py-3 text-center text-base font-medium max-w-xl mx-auto border border-white/20">
         <span class="font-semibold">Note:</span> Priority consideration will be given to applications received before <span class="font-bold">March 1, 2026</span>.
       </div>
     </section>
     <!-- End How to Enroll section -->
 
     <!-- FAQ and Contact section -->
-    <section id="contact" class="scroll-mt-16 bg-gray-50 rounded-lg shadow p-6 mb-8">
-      <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
-        <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">FAQ and Contact</span>
+    <section id="contact" class="scroll-mt-20 bg-white rounded-2xl shadow-lg p-6 mb-8 border border-slate-100">
+      <h4 class="text-xl font-bold mb-4 flex items-center gap-3">
+        <span class="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 text-white rounded-xl">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </span>
+        <span class="text-slate-800">FAQ</span>
       </h4>
-      <ul class="list-disc pl-6 space-y-4 text-base text-blue-900 mb-6">
-        <li>
-          <span class="font-semibold">What should they bring?</span><br>
-          Each student should bring their own laptop (fully charged), a water bottle, and a snack for the 15-minute break. Please ensure the laptop is fully charged before each day.
-        </li>
-        <li>
-          <span class="font-semibold">What if my child cannot attend one day?</span><br>
-          We will do our best to catch them up. Each day builds on the previous, so full attendance is encouraged.
-        </li>
-        <li>
-          <span class="font-semibold">Can I get a refund if my child cannot attend?</span><br>
-          We will issue a 50% refund if notified at least 14 days before camp starts.
-        </li>
-        <li>
-          <span class="font-semibold">Do students get a certificate or completion proof?</span><br>
-          Yes, every student receives a personalized certificate and access to their completed code and game.
-        </li>
-        <li>
-          <span class="font-semibold">Can parents observe the class?</span><br>
-          To maintain a focused learning environment, we do not allow drop-in visits. Students will have access to all teaching materials after the camp.
-        </li>
-        <li>
-          <span class="font-semibold">Do you offer financial aid or scholarships?</span><br>
-          We are seeking sponsors to offer scholarships. Please contact us if you are interested in financial aid.
-        </li>
-        <li>
-          <span class="font-semibold">Is parking available at the venue?</span><br>
-          Yes, there is a large parking lot around the Italian School building at 4550 Kearny Villa Rd Suite 202.
-        </li>
-        <li>
-          <span class="font-semibold">What is the class size?</span><br>
-          We target between 8 and 12 students.
-        </li>
-        <li>
-          <span class="font-semibold">Is lunch or a snack provided?</span><br>
-          No, lunch or snack is not provided. Please ensure your student brings a snack for the break.
-        </li>
-      </ul>
-      <p class="text-base text-gray-800 mb-2">For any other questions, please contact us at:</p>
-      <div class="flex justify-center mb-4">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSewqz_DiHqwhH83XavamrpiqLbU2ib5wJzRXIIWK_Ti7q_d8A/viewform?usp=pp_url&entry.561435805=Teaching:+Python+%2B+AI%5E2&entry.1256461741=I+have+a+question+about+the+Python+%2B+AI%5E2+coding+camp:%0A%0A" target="_blank" rel="noopener" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg text-xl shadow-lg transition-colors duration-200" aria-label="Contact form for questions about Python + AI Squared camp">
-          Contact Form
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          Who is this camp for?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">Middle and high school students interested in coding and AI. No previous programming experience required—kids with prior Python experience are also welcome!</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          What do students need to bring?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">A laptop (fully charged), water bottle, and snack. No tablets/phones. Any Windows, Mac, or Chromebook works—everything runs in a browser.</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          What will students build?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">A classic text-based game in Python, first as player-vs-player, then upgraded with an AI-powered opponent. They'll use AI coding assistants throughout.</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          What's the exact location?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">Italian School of San Diego, 4550 Kearny Villa Rd Suite 202, Kearny Mesa. Large parking lot available.</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          What about refunds or missed days?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">50% refund if notified 14+ days before camp. If a student misses a day, we'll help catch them up—but full attendance is encouraged.</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          Do students get a certificate?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">Yes! Every student receives a personalized certificate and access to their completed code and game.</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          Class size and scholarships?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">8–12 students per session. We're seeking sponsors for scholarships—contact us if interested in financial aid.</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          How is AI used in the camp?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">Students explore AI in two ways: (1) using an AI coding assistant (like ChatGPT) to understand and improve their Python code, and (2) integrating an AI service to create a smart game opponent. The curriculum includes direct interaction with modern Large Language Models.</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          What's the teaching philosophy?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">Programming is best learned by doing. Students experiment, make mistakes, and build real projects from day one. With AI tools, they move faster, ask better questions, and build confidence as creators.</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          Can parents observe the class?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">To maintain a focused learning environment, we do not allow drop-in visits. Students will have access to all teaching materials after the camp.</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          Is lunch or snack provided?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">No, please have your student bring a snack and water bottle for the 15-minute break. Also ensure the laptop is fully charged each day.</div>
+      </details>
+      <details class="group mb-2">
+        <summary class="cursor-pointer bg-slate-50 rounded-xl p-4 border border-slate-100 font-semibold text-slate-800 hover:bg-slate-100 transition-colors list-none flex justify-between items-center">
+          Who developed this program?
+          <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <div class="px-4 py-3 text-slate-600 text-sm">This program was conceived and developed by Dr. Andrea Zonca in 2025. He started learning Python in 2005 during grad school in astrophysics, and began teaching computing in 2014 through Software Carpentry. He has taught Python, HPC, and AI topics at the San Diego Summer Institute every August since 2015.</div>
+      </details>
+      
+      <div class="mt-6 pt-4 border-t border-slate-100 text-center">
+        <p class="text-sm text-slate-600 mb-3">Have another question?</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSewqz_DiHqwhH83XavamrpiqLbU2ib5wJzRXIIWK_Ti7q_d8A/viewform?usp=pp_url&entry.561435805=Teaching:+Python+%26+AI+Coding+Camp&entry.1256461741=I+have+a+question+about+the+Python+%26+AI+Coding+Camp:%0A%0A" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold transition-colors">
+          Contact Us →
         </a>
       </div>
     </section>
-    <!-- End FAQ and Contact section -->
+    <!-- End FAQ section -->
 
-    <!-- Philosophy section -->
-    <section class="bg-gray-50 rounded-lg shadow p-6 mb-8">
-      <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
-        <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Philosophy</span>
-      </h4>
-      <p class="text-base text-gray-800">
-        Programming is best learned by doing. Students experiment, make mistakes, and build real projects from day one. With the help of AI tools, they move faster, ask better questions, and build confidence as creators.
-      </p>
-    </section>
-    <!-- End Philosophy section -->
-
-    <!-- Instructor profile section -->
-    <section class="bg-gray-50 rounded-lg shadow-md p-6 mb-8">
-        <h4 class="text-lg font-semibold mb-2 flex items-center gap-2">
-            <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded">Instructor profile</span>
-        </h4>
-        <div class="flex justify-center mb-4">
-            <img src="andrea_zonca.jpg" alt="Portrait of Dr. Andrea Zonca, instructor of Python + AI Squared camp" class="w-32 h-32 rounded-full object-cover shadow-lg border-4 border-blue-200">
+    <!-- Instructor -->
+    <section class="bg-gradient-to-r from-slate-50 to-indigo-50/50 rounded-2xl p-6 mb-8 border border-slate-100">
+      <div class="flex flex-col sm:flex-row items-center gap-5">
+        <img src="andrea_zonca.jpg" alt="Dr. Andrea Zonca" class="w-24 h-24 rounded-2xl object-cover shadow-lg border-2 border-white">
+        <div class="text-center sm:text-left">
+          <p class="font-bold text-slate-800 text-lg">Dr. Andrea Zonca</p>
+          <p class="text-indigo-600 text-sm font-medium">Lead of Scientific Computing · UCSD Supercomputer Center</p>
+          <p class="text-slate-600 text-sm mt-2">Teaching Python & AI since 2014. Hands-on approach refined through Software Carpentry and the SD Summer Institute.</p>
         </div>
-        <div class="mb-2 text-center">
-            <span class="block text-xl font-bold text-gray-800">Andrea Zonca, PhD (he/him)</span>
-        </div>
-        <h3 class="text-md font-medium mb-4 text-center text-blue-700">Lead of Scientific Computing Applications<br><span class="text-gray-700">San Diego Supercomputer Center</span></h3>
-        <ul class="list-disc pl-6 space-y-2 text-base text-gray-800 text-left">
-          <li>Started learning Python during grad school in astrophysics in 2005.</li>
-          <li>Began teaching computing in 2014 through <span class="italic">Software Carpentry</span>, with a hands-on approach for early-career scientists.</li>
-          <li>Has taught Python for HPC, version control, and AI topics at the San Diego Summer Institute every August since 2015.</li>
-        </ul>
+      </div>
     </section>
-    <!-- End Instructor profile section -->
 
-    <footer class="w-full flex flex-col items-center justify-center mt-8 mb-4">
-      <a href="https://sandiegodata.science" target="_blank" rel="noopener" class="flex items-center gap-2 mb-2">
-        <img src="https://sandiegodata.science/images/logos/sandiegodatasciencelogo.png" alt="San Diego Data Science Logo" class="w-10 h-10 rounded-full border border-gray-300 shadow" />
-        <span class="text-base font-semibold text-blue-900 hover:underline">San Diego Data Science LLC</span>
+    <!-- Inclusivity note -->
+    <p class="text-center text-sm text-slate-500 mb-8 px-4">
+      We welcome students from all backgrounds. Our camp creates a supportive space for everyone to discover coding and AI.
+    </p>
+
+    <footer class="w-full flex flex-col items-center justify-center pt-6 border-t border-slate-200">
+      <a href="https://sandiegodata.science" target="_blank" rel="noopener" class="flex items-center gap-3 mb-3 group">
+        <img src="https://sandiegodata.science/images/logos/sandiegodatasciencelogo.png" alt="San Diego Data Science Logo" class="w-12 h-12 rounded-xl border border-slate-200 shadow-md group-hover:shadow-lg transition-shadow" />
+        <span class="text-base font-semibold text-slate-700 group-hover:text-indigo-600 transition-colors">San Diego Data Science LLC</span>
       </a>
-      <span class="text-sm text-gray-600">&copy; 2026 San Diego Data Science LLC</span>
+      <span class="text-sm text-slate-500">&copy; 2026 San Diego Data Science LLC</span>
     </footer>
   </main>
   <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
